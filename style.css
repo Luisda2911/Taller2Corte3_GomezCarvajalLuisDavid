@@ -1,57 +1,46 @@
-.layout {
-    display: grid;
-    gap: 4px;
-    grid-template-rows: 40px auto 60px 60px 40px;
-    grid-template-columns: 1fr; 
-    grid-template-areas: 
-      "header"
-      "sidebar"
-      "main"
-      "widget"
-      "statistics"
-      "footer";
-    height: 160vh;
+body {
+    background-color: #e5e5e5;
+    font-family: sans-serif;
   }
   
-  @media (min-width: 480px) {
-    .layout {
-      display: grid;
-      grid-template-rows: 40px auto 88px 40px;
-      grid-template-columns: 160px auto auto;
-      grid-template-areas:
-        "header header header"
-        "sidebar main main"
-        "sidebar widget statistics"
-        "footer footer footer";
-    }
+  .id-card-container {
+    position: absolute;
+    width: max-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
   }
   
-  header {
-    grid-area: header;
-    background: #C08bfd;
+  .id-card-header {
+    margin-bottom: 20px;
+    margin-right: 50px;
   }
   
-  nav {
-    grid-area: sidebar;
-    background: #E9967A; /* Ejemplo: color para el sidebar */
+  .id-card-header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 50px;
   }
   
-  main {
-    grid-area: main;
-    background: #DCDCDC; /* Ejemplo: color para el main */
+  .id-card-header h2 {
+    margin: 0;
+    text-align: center;
+    margin-top: 10%;
   }
   
-  article.widget {
-    grid-area: widget;
-    background: #FFDAB9; /* Ejemplo: color para el widget */
+  .user-info {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
   }
   
-  article.statistics {
-    grid-area: statistics;
-    background: #FFDEAD; /* Ejemplo: color para el statistics */
-  }
-  
-  footer {
-    grid-area: footer;
-    background: #C08bfd;
+  .user-info label {
+    margin-bottom: 5px;
+    margin-bottom: 20px;
   }
